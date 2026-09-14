@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Una invitación especial para Cecilia ❤️"
+  >
+
+  <title>Para Cecilia ❤️</title>
+
+  <link rel="stylesheet" href="./estilos/styles.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+    <!-- =================================
+         MÚSICA
+    ================================== -->
+
+    <audio id="audio" loop>
+      <source src="musica.mp3" type="audio/mpeg">
+      Tu navegador no permite reproducir audio.
+    </audio>
+
+    <button
+      id="musicButton"
+      class="music-button"
+      type="button"
+      aria-label="Controlar música"
+    >
+      🎵 <span id="musicText">Nuestra canción</span>
+    </button>
+
+    <!-- =================================
+         CORAZONES FLOTANTES
+    ================================== -->
+
+    <div
+      class="floating-hearts"
+      aria-hidden="true"
+    >
+      <span class="heart heart-1">♡</span>
+      <span class="heart heart-2">♥</span>
+      <span class="heart heart-3">♡</span>
+      <span class="heart heart-4">♥</span>
+      <span class="heart heart-5">♡</span>
+      <span class="heart heart-6">♥</span>
+      <span class="heart heart-7">♡</span>
+      <span class="heart heart-8">♥</span>
+      <span class="heart heart-9">♡</span>
+      <span class="heart heart-10">♥</span>
+    </div>
+
+    <!-- =================================
+         PANTALLA DEL SOBRE
+    ================================== -->
+
+    <section
+      id="sobre"
+      class="envelope-screen"
+    >
+
+      <p class="eyebrow">
+        UNA CARTA PARA TI
+      </p>
+
+      <div class="envelope-decoration">
+        <span>♡</span>
+        <span>✦</span>
+        <span>♡</span>
+      </div>
+
+      <h1 class="envelope-title">
+        Para Cecilia
+      </h1>
+
+      <p class="envelope-subtitle">
+        Hay algo que quiero decirte...
+      </p>
+
+      <button
+        class="envelope"
+        id="envelopeButton"
+        type="button"
+        aria-label="Abrir sobre"
+      >
+
+        <div class="envelope-back"></div>
+
+        <div class="envelope-paper">
+          <span>♡</span>
+          <strong>Para ti</strong>
+          <small>Con cariño</small>
+        </div>
+
+        <div class="envelope-flap"></div>
+
+        <div class="envelope-front"></div>
+
+        <div class="envelope-seal">
+          ♥
+        </div>
+
+      </button>
+
+      <button
+        class="open-letter-button"
+        id="openLetterButton"
+        type="button"
+      >
+        Abrir mi carta <span>♡</span>
+      </button>
+
+      <p class="envelope-footer">
+        Hecho especialmente para ti
+      </p>
+
+    </section>
+
+    <!-- =================================
+         PANTALLA DE LA CARTA
+    ================================== -->
+
+    <section
+      id="carta"
+      class="card"
+      hidden
+    >
+
+      <div class="letter-top">
+        <span>♡</span>
+        <span class="letter-top-line"></span>
+        <span>✦</span>
+        <span class="letter-top-line"></span>
+        <span>♡</span>
+      </div>
+
+      <p class="eyebrow">
+        PARA UNA MUJER ESPECIAL
+      </p>
+
+      <h1>
+        Cecilia,<br>
+        hay algo que<br>
+        quiero decirte...
+      </h1>
+
+      <div class="gold-line">
+        <span>✦</span>
+      </div>
+
+      <div class="photo-frame">
+        <img
+          src="./estilos/cecilia.jpg"
+          alt="Foto especial de Cecilia"
+        >
+      </div>
+
+      <p class="photo-caption">
+        Una sonrisa que merece momentos bonitos ♡
+      </p>
+
+      <div class="letter-text">
+
+        <p>
+          No sé exactamente cómo decirte esto,
+          pero quería encontrar una manera bonita
+          de hacerlo.
+        </p>
+
+        <p>
+          Me pareces una mujer increíble,
+          de esas personas que uno tiene ganas
+          de seguir conociendo, de escuchar
+          y de compartir momentos bonitos.
+        </p>
+
+        <p>
+          Por eso hice esto para ti.
+          No para complicarte las cosas,
+          sino para preguntarte algo sencillo:
+        </p>
+
+        <p class="highlight-quote">
+          ¿Me aceptarías una cita? ❤️
+        </p>
+
+        <p>
+          Me gustaría invitarte a salir,
+          conversar, reírnos y disfrutar
+          un momento juntos.
+        </p>
+
+        <p>
+          Sin presiones, a nuestro ritmo.
+          Solo tú y yo, compartiendo algo bonito.
+        </p>
+
+      </div>
+
+      <div class="signature">
+        <span>Con cariño,</span>
+        <strong>Carlos Chavez</strong>
+        <span>♡</span>
+      </div>
+
+      <button
+        class="main-button"
+        id="continueButton"
+        type="button"
+      >
+        Continuar mi invitación <span>♡</span>
+      </button>
+
+      <p class="small-note">
+        Una pregunta especial para ti
+      </p>
+
+    </section>
+
+    <!-- =================================
+         PANTALLA DE INVITACIÓN
+    ================================== -->
+
+    <section
+      id="invitacion"
+      class="card"
+      hidden
+    >
+
+      <p class="eyebrow">
+        UNA PREGUNTA ESPECIAL
+      </p>
+
+      <div class="mini-hearts">
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+      </div>
+
+      <h1>
+        Cecilia,<br>
+        ¿quieres salir<br>
+        conmigo?
+      </h1>
+
+      <div class="gold-line">
+        <span>✦</span>
+      </div>
+
+      <p class="romantic-text">
+        Me gustaría compartir contigo
+        un momento especial.
+      </p>
+
+      <p class="romantic-text">
+        Una salida bonita, una conversación
+        y muchas sonrisas.
+      </p>
+
+      <div class="question-box">
+        <span>♡</span>
+        <p>¿Me aceptarías una cita?</p>
+        <span>♡</span>
+      </div>
+
+      <div
+        id="funnyMessage"
+        class="funny-message"
+        hidden
+        aria-live="polite"
+      ></div>
+
+      <div class="buttons">
+
+        <button
+          class="btn-yes"
+          id="yesButton"
+          type="button"
+        >
+          SÍ, ACEPTO <span>♥</span>
+        </button>
+
+        <button
+          class="btn-no"
+          id="noButton"
+          type="button"
+        >
+          Déjame pensarlo 🙈
+        </button>
+
+      </div>
+
+      <p class="footer-note">
+        Sea cual sea tu respuesta,<br>
+        gracias por leer mi carta.<br>
+        <span>♡</span>
+      </p>
+
+    </section>
+
+    <!-- =================================
+         PANTALLA DE CELEBRACIÓN
+    ================================== -->
+
+    <section
+      id="celebracion"
+      class="card"
+      hidden
+    >
+
+      <div class="celebration-heart">
+        ♥
+      </div>
+
+      <p class="eyebrow">
+        ME HICISTE MUY FELIZ
+      </p>
+
+      <h1>
+        ¡Gracias por decir<br>
+        que sí, Cecilia!
+      </h1>
+
+      <div class="gold-line">
+        <span>✦</span>
+      </div>
+
+      <p class="romantic-text">
+        Ahora vamos a elegir cómo
+        será nuestro momento juntos.
+      </p>
+
+      <div class="celebration-quote">
+        "Los momentos bonitos comienzan
+        con una buena compañía."
+      </div>
+
+      <button
+        class="main-button"
+        id="choosePlanButton"
+        type="button"
+      >
+        Elegir nuestra cita <span>♡</span>
+      </button>
+
+    </section>
+
+    <!-- =================================
+         FORMULARIO DE CITA
+    ================================== -->
+
+    <section
+      id="plan"
+      class="card"
+      hidden
+    >
+
+      <!-- BARRA DE PROGRESO -->
+
+      <div class="progress-container">
+
+        <div class="progress-step active">
+          <span>1</span>
+          <small>Invitación</small>
+        </div>
+
+        <div class="progress-line"></div>
+
+        <div class="progress-step active">
+          <span>2</span>
+          <small>Nuestro plan</small>
+        </div>
+
+        <div class="progress-line"></div>
+
+        <div class="progress-step">
+          <span>3</span>
+          <small>Confirmar</small>
+        </div>
+
+      </div>
+
+      <p class="eyebrow">
+        NUESTRO MOMENTO
+      </p>
+
+      <h1>
+        ¿Qué te gustaría<br>
+        hacer conmigo?
+      </h1>
+
+      <div class="gold-line">
+        <span>✦</span>
+      </div>
+
+      <p class="romantic-text">
+        Escoge el plan que más te guste.
+        Lo importante es compartirlo contigo.
+      </p>
+
+      <form
+        id="planForm"
+        autocomplete="off"
+      >
+
+        <label class="section-label">
+          Elige nuestra actividad ♡
+        </label>
+
+        <!-- LOS PLANES SE CREAN DESDE script.js -->
+
+        <div
+          class="plans-grid"
+          id="plansGrid"
+        ></div>
+
+        <!-- NOMBRE -->
+
+        <div class="form-group">
+
+          <label for="nombre">
+            Tu nombre 💌
+          </label>
+
+          <input
+            id="nombre"
+            name="nombre"
+            type="text"
+            placeholder="Cecilia"
+            autocomplete="off"
+            maxlength="80"
+            required
+          >
+
+        </div>
+
+        <!-- FECHA -->
+
+        <div class="form-group">
+
+          <label for="fecha">
+            ¿Qué día te gustaría? 📅
+          </label>
+
+          <input
+            id="fecha"
+            name="fecha"
+            type="date"
+            min="2026-10-15"
+            required
+          >
+
+        </div>
+
+        <!-- HORA -->
+
+        <div class="form-group">
+
+          <label for="hora">
+            ¿A qué hora? ⏰
+          </label>
+
+          <input
+            id="hora"
+            name="hora"
+            type="time"
+            required
+          >
+
+        </div>
+
+        <!-- LUGAR -->
+
+        <div class="form-group">
+
+          <label for="lugar">
+            ¿Dónde te gustaría ir? 📍
+          </label>
+
+          <input
+            id="lugar"
+            name="lugar"
+            type="text"
+            placeholder="Un lugar bonito..."
+            autocomplete="off"
+            maxlength="150"
+            required
+          >
+
+        </div>
+
+        <!-- MENSAJE -->
+
+        <div class="form-group">
+
+          <label for="mensaje">
+            Déjame un mensajito 💬
+          </label>
+
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Tengo muchas ganas de verte..."
+            maxlength="500"
+          ></textarea>
+
+        </div>
+
+        <!-- CONFIRMAR -->
+
+        <button
+          class="main-button"
+          type="submit"
+        >
+          Confirmar nuestra cita <span>♥</span>
+        </button>
+
+      </form>
+
+      <button
+        class="back-button"
+        id="backToInvitation"
+        type="button"
+      >
+        ← Volver a la invitación
+      </button>
+
+    </section>
+
+    <!-- =================================
+         PANTALLA DE CONFIRMACIÓN
+    ================================== -->
+
+    <section
+      id="confirmacion"
+      class="card"
+      hidden
+    >
+
+      <div class="celebration-heart">
+        ♥
+      </div>
+
+      <p class="eyebrow">
+        CITA CONFIRMADA
+      </p>
+
+      <h1>
+        ¡Tenemos una cita!<br>
+        ♡
+      </h1>
+
+      <div class="gold-line">
+        <span>✦</span>
+      </div>
+
+      <p class="romantic-text">
+        Cecilia, gracias por aceptar.<br>
+        Prometo hacer de ese día
+        un momento bonito.
+      </p>
+
+      <!-- RESUMEN -->
+
+      <div class="date-summary">
+
+        <h2>
+          ♡ Nuestro plan
+        </h2>
+
+        <p>
+          <strong>Actividad:</strong>
+          <span id="summaryPlan"></span>
+        </p>
+
+        <p>
+          <strong>Fecha:</strong>
+          <span id="summaryFecha"></span>
+        </p>
+
+        <p>
+          <strong>Hora:</strong>
+          <span id="summaryHora"></span>
+        </p>
+
+        <p>
+          <strong>Lugar:</strong>
+          <span id="summaryLugar"></span>
+        </p>
+
+        <p
+          id="summaryMensajeContainer"
+          hidden
+        >
+          <strong>Tu mensaje:</strong>
+          <span id="summaryMensaje"></span>
+        </p>
+
+      </div>
+
+      <p class="final-message">
+        Tú pon la fecha,<br>
+        yo pongo las ganas de verte.<br>
+        🌷
+      </p>
+
+      <!-- WHATSAPP -->
+
+      <button
+        class="btn-whatsapp"
+        id="whatsappButton"
+        type="button"
+      >
+        💬 Enviarme mi respuesta<br>
+        por WhatsApp ❤️
+      </button>
+
+      <p class="whatsapp-note">
+        Se abrirá WhatsApp con tu respuesta
+        lista para enviarme.
+      </p>
+
+      <!-- MODIFICAR -->
+
+      <button
+        class="back-button"
+        id="modifyButton"
+        type="button"
+      >
+        ← Modificar mi respuesta
+      </button>
+
+      <br>
+
+      <!-- REINICIAR -->
+
+      <button
+        class="restart-button"
+        id="restartButton"
+        type="button"
+      >
+        Volver al inicio ♡
+      </button>
+
+    </section>
+
+  </main>
+
+  <!-- JAVASCRIPT -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
